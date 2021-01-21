@@ -1,0 +1,184 @@
+/*Modals*/
+#modal-ordercall
+    width: 100%
+    height: 100%
+    position: fixed
+    top: 0
+    left: 0
+    background: rgba(0, 0, 0, .9)
+
+    // position: relative
+    // background: #FAF7F5
+
+    padding: 35px
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 10000
+
+    .modal__wrapper
+        width: auto
+        max-width: 600px
+        height: auto
+        background: #FAF7F5
+        border: 1px solid #CCBCB1
+        box-sizing: border-box
+        border-radius: 10px
+        position: relative
+        margin: 40px auto
+        padding: 15px
+
+        .modal--close
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 35px
+            height: 35px
+            position: absolute
+            top: 15px
+            right: 15px
+            z-index: 10000
+            text-decoration: none
+            cursor: pointer
+            &:hover
+                text-decoration: none
+                cursor: pointer
+            i
+                color: #222222
+                font-size: 25px
+
+        &::before
+            content: ""
+            width: 265px
+            height: 350px
+            background: url('../images/modal-form-leaf.png') no-repeat center
+            background-size: cover
+            position: absolute
+            top: 0px
+            left: 0px
+            z-index: 1
+        &::after
+            content: ""
+            width: 265px
+            height: 236px
+            background: url('../images/modal-form-rose.png') no-repeat center
+            background-size: cover
+            position: absolute
+            bottom: 0px
+            right: 0px
+            z-index: 1
+
+    & form
+        width: 100%
+        margin: 0px auto
+        position: relative
+        z-index: 1000
+    & h2
+        font-family: "Gilroy-Black", sans-serif
+        font-size: 40px
+        line-height: 48px
+        color: #444444
+        padding-bottom: 50px
+        position: relative
+        z-index: 1000
+    & .form-group
+        width: 100%
+        height: auto
+        min-height: 80px
+        & input
+            width: 100%
+            height: 80px
+            border: 1px solid #CCBCB1
+            box-sizing: border-box
+            border-radius: 5px
+            padding-left: 30px
+            &::placeholder
+                font-family: "Gilroy-Regular", sans-serif
+                font-size: 18px
+                line-height: 40px
+                color: #4F4F4F
+        &__policy
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            height: 15px
+            margin-top: 20px
+            margin-bottom: 30px
+        & input[type=checkbox]
+            width: 15px
+            height: 15px
+            float: left
+            border: 1px solid #CCBCB1
+            box-sizing: border-box
+            border-radius: 3px
+            margin-right: 10px
+        & .checkbox__label
+            font-family: "Gilroy-Regular", sans-serif
+            font-size: 12px
+            line-height: 25px
+            height: 15px
+            & a
+                color: #DD294D
+                text-decoration: none
+                &:hover
+                    cursor: pointer
+                    text-decoration: none
+        &__button
+            margin-bottom: 0px
+            & button
+                width: 100%
+                height: 80px
+                background: #DD294D
+                border-radius: 5px
+                font-family: "Gilroy-Black", sans-serif
+                font-size: 18px
+                line-height: 22px
+                color: #ffffff
+#modal-menu
+    width: 100%
+    height: 100vh
+    background: #ffffff
+    position: fixed
+    top: 0px
+    left: 0px
+    z-index: 10000
+    display: flex
+    align-items: center
+    justify-content: center
+.modal-menu__wrapper
+    width: 60%
+    height: 350px
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+.modal-menu__close
+    width: 50px
+    height: 50px
+    position: absolute
+    top: 0px
+    right: 0px
+.modal-menu__list
+    list-style: none
+    .link--mail,
+    .link--phone,
+    .link--whatsapp
+        & a
+            justify-content: center
+        &::before
+            display: none
+        &::after
+            display: none
+    .link--phone,
+    .link--whatsapp
+        & a
+            left: 0px
+#ordercall-name-error,
+#ordercall-name-success
+    position: relative
+    left: 0
+    margin-top: 15px
+#orderMessage
+    margin-top: 15px
+    color: green

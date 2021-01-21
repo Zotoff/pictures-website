@@ -1,0 +1,52 @@
+footer.footer
+    .container
+        .row.footer__wrapper
+            .col-xl-5.col-lg-5.col-md-5.col-sm-5.col-xs-5.footer__left.d-flex.justify-content-start.align-items-center
+                .footer__logo
+                    a(href="/") Pintora
+                .footer__copyright
+                    p &copy; Все права защищены
+            .col-xl-7.col-lg-7.col-md-7.col-sm-7.col-xs-7.footer__right.d-flex.justify-content-end.align-items-center
+                .footer__nav__menu
+                    ul.footer__nav__menu__list
+                        li.link--mail
+                            a.footer__nav__menu__link(href="mailto:zakaz@holst-na-zakaz.ru") zakaz@holst-na-zakaz.ru
+                        li.link--phone
+                            a.footer__nav__menu__link(href="tel:+74951153816") +7 (495) 115-38-16
+                        li.link--whatsapp
+                            a.footer__nav__menu__link(href="tel:+79686038598") +7 968 603-85-98
+                .footer__social__block
+                    a.footer__social__block__item(href="", target="_blank")
+                        img(loading="lazy", src="images/icons/icon-footer-instagram.svg", alt="")
+                    a.footer__social__block__item(href="", target="_blank")
+                        img(loading="lazy", src="images/icons/icon-footer-vk.svg", alt="")
+                    a.footer__social__block__item(href="", target="_blank")
+                        img(loading="lazy", src="images/icons/icon-footer-youtube.svg", alt="")
+#modal-ordercall(style="display: none")
+    .modal__wrapper
+        a(href="").modal--close#modalCloseButton
+            i.fas.fa-times
+        h2 Заказать<br />обратный звонок
+        form(method="GET", action="./ajax/response.json")#orderForm
+            .form-group
+                input(type="text", name="ordercall-name", placeholder="Ваше имя", required="required", data-rule-minlength="2", data-msg-minlehgth="Минимум 2 символа", data-msg="Пожалуйста, заполните это поле")
+            .form-group
+                input(type="tel", name="ordercall-phone", required="required", data-msg="Пожалуйста, заполните это поле", data-rule-digits="true", data-msg-digits="Допустим ввод только цифр",  placeholder="Номер телефона")
+            .form-group.form-group__policy
+                input(type="checkbox", checked)
+                label.checkbox__label Я ознакомлен и согласен с 
+                    a(href="/policy", target="_blank").text--red  условиями конфиденциальности
+            .form-group.form-group__button
+                button(type="submit") Свяжитесь с нами
+            p#orderMessage
+#modal-menu(style="display: none")
+    .modal-menu__wrapper
+        a.modal-menu__close(href="javascript:;")
+            img(loading="lazy", src="images/icons/icon-macos-close.png", alt="")
+        ul.modal-menu__list
+            li.link--mail
+                a.heading__nav__menu__link(href="mailto:zakaz@holst-na-zakaz.ru") zakaz@holst-na-zakaz.ru
+            li.link--phone
+                a.heading__nav__menu__link(href="tel:+74951153816") +7 (495) 115-38-16
+            li.link--whatsapp
+                a.heading__nav__menu__link(href="tel:+79686038598") +7 968 603-85-98

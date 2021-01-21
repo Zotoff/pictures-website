@@ -1,0 +1,186 @@
+/*Review block*/
+@import 'variables'
+.review
+    margin-top: 65px
+    &__main__block
+        display: flex
+        justify-content: space-around
+        align-items: flex-start
+        flex-wrap: wrap
+        position: relative
+        &::before
+            content: ""
+            background: url('../images/reviews-block-tree.png') no-repeat center
+            width: 204px
+            height: 395px
+            background-size: cover
+            position: absolute
+            right: 634px
+            bottom: 91px
+            transform: rotate(-10deg)
+        &::after
+            content: ""
+            background: url('../images/reviews-block-rose-big.png') no-repeat center
+            width: 450px
+            height: 700px
+            background-size: cover
+            position: absolute
+            right: -200px
+            top: 0px
+    &__whatcan__left
+        width: 29%
+    &__whatcan__right
+        width: 100%
+        overflow: hidden
+        height: 840px
+        position: relative
+        padding: 0px
+        left: 50px
+    &__whatcan__slider__item__wrapper
+        width: 95%
+        height: 95%
+        border: 3px solid #E7D8CE
+        border-radius: 5px
+        position: absolute
+        top: 22px
+        left: 15px
+        z-index: 10000
+    &__whatcan__slider__item__link
+        width: 95%
+        height: 97%
+        position: absolute
+        top: 35px
+        left: 26px
+        z-index: 1
+        & img
+            display: block
+            width: 100%
+            height: 98%
+            border-radius: 5px
+            z-index: 1
+    &__whatcan__slider__item
+        width: 686px
+    &__heading
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 420px
+        height: 230px
+        background: url('../images/review-block-heading-bg.png') no-repeat center
+        margin-bottom: 15px
+        & h2 
+            font-family: "Gilroy-UltraLight", sans-serif
+            font-size: 50px
+            line-height: 70px
+            font-weight: 300
+            text-align: center
+    &__whatcan__left__block
+        margin-bottom: 40px
+        position: relative
+        &:first-child
+            &::before
+                content: ""
+                width: 245px
+                height: 120px
+                background: url('../images/review-block-leaf.png') no-repeat center
+                background-size: cover
+                position: absolute
+                top: 95px
+                left: -124px
+        &:nth-child(2)
+            &::before
+                content: ""
+                width: 245px
+                height: 200px
+                background: url('../images/review-block-rose.png') no-repeat center
+                background-size: cover
+                position: absolute
+                top: 15px
+                left: -100px
+    &__heading3
+        font-family: "Gilroy-LightItalic", sans-serif
+        font-size: 40px
+        line-height: 1.2em
+        color: #4f4f4f
+        padding-top: 50px
+        padding-bottom: 30px
+    &__list
+        font-family: "Gilroy-Regular", sans-serif
+        font-soze: 18px
+        color: #4f4f4f
+        & li
+            margin-bottom: 15px
+    &__left__button
+        margin-top: 90px
+        & a
+            display: block
+            width: 334px
+            height: 80px
+            margin-bottom: 15px
+            background-color: $lightRed
+            color: #ffffff
+            font-family: "Gilroy-Black", sans-serif
+            font-size: 18px
+            line-height: 80px
+            text-align: center
+            letter-spacing: 0.03em
+            text-transform: uppercase
+            webkit-appearance: none
+            border: none
+            border-radius: 5px
+            text-decoration: none
+            &:hover
+                cursor: pointer
+                text-decoration: none
+    &__left__smalltext
+        font-size: 16px
+        text-align: center
+        font-family: "Gilroy-Regular"
+        font-weight: bold
+        width: 300px
+    &__swiper__pagination
+        width: 206px
+        height: 79px
+        background-color: #ffffff
+        border-radius: 45px 45px 0px 0px
+        display: flex
+        align-items: center
+        justify-content: space-around
+        position: absolute
+        bottom: -15px
+        z-index: 1000
+        left: 45%
+        margin-left: -103px
+    &__swiper__prev,
+    &__swiper__next
+        display: block
+        width: 44px
+        height: 44px
+        border-radius: 50%
+        background-color: #FAF7F5
+        position: relative
+        border: none
+        -webkit-appearance: none
+        box-shadow: none
+    &__swiper__next
+        &::before
+            content: ""
+            width: 30px
+            height: 15px
+            background: url('../images/icons/review-slider-arrow-after.svg') no-repeat center
+            position: absolute
+            top: 15px
+            left: -5px
+    &__swiper__prev
+        &::after
+            content: ""
+            width: 30px
+            height: 15px
+            background: url('../images/icons/review-slider-arrow-before.svg') no-repeat center
+            position: absolute
+            top: 15px
+            right: -5px
+.whatcan__slider
+    width: 686px
+    height: 100%
+    overflow: hidden

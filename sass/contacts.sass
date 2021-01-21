@@ -1,0 +1,49 @@
+/*Contacts Section*/
+.contacts
+    height: auto
+    position: relative
+    &__left,
+    &__right
+        display: flex
+        align-items: flex-start
+        flex-wrap: wrap
+        z-index: 1000
+    &__right
+        justify-content: flex-end
+        margin-top: 35px
+    &::after
+        content: ""
+        width: 60%
+        height: 828px
+        position: absolute
+        right: 0%
+        top: -2%
+        background: url('../images/contacts-form-bg.png') no-repeat center
+        background-size: contain
+        z-index: 1
+    &__left__heading
+        width: 100%
+        margin-top: 100px
+        & h2
+            font-family: "Gilroy-UltraLight", sans-serif
+            font-size: 50px
+            line-height: 60px
+    &__left__text
+        padding-left: 75px
+        position: relative
+        &::before
+            content: ""
+            width: 150px
+            height: 150px
+            background: url('../images/contacts-leaf-left.png') no-repeat center
+            background-size: cover
+            position: absolute
+            top: 0px
+            left: 0px
+        & p
+            font-family: "Gilroy-Regular", sans-serif
+            font-size: 18px
+            line-height: 45px
+            font-style: italic
+    &__right__form__wrapper
+        width: 696px

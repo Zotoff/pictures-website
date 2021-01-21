@@ -1,0 +1,119 @@
+/*Testimonials section*/
+.testimonials
+  margin-top: 160px
+  margin-bottom: 120px
+  & .container
+    position: relative
+  & .row:nth-child(2)
+    position: relative
+  &__slider__controls
+    position: relative
+  &__slider__controls__wrapper
+    width: 206px
+    height: 79px
+    background-color: #ffffff
+    border-radius: 45px 45px 0px 0px
+    display: flex
+    align-items: center
+    justify-content: space-around
+    position: absolute
+    bottom: 0px
+    z-index: 1000
+    left: 50%
+    margin-left: -103px
+  &__slider__prev,
+  &__slider__next
+    width: 44px
+    height: 44px
+    border-radius: 50%
+    background-color: #FAF7F5
+    position: relative
+  &__slider__next
+    &::before
+      content: ""
+      width: 30px
+      height: 15px
+      background: url('../images/icons/review-slider-arrow-after.svg') no-repeat center
+      position: absolute
+      top: 15px
+      left: -5px
+  &__slider__prev
+    &::after
+      content: ""
+      width: 30px
+      height: 15px
+      background: url('../images/icons/review-slider-arrow-before.svg') no-repeat center
+      position: absolute
+      top: 15px
+      right: -5px
+  &__slider
+    width: 100%
+    padding: 0px
+    overflow: hidden
+    height: 470px
+    padding-top: 60px
+    padding-left: 15px
+    padding-right: 15px
+    &__item
+      height: 368px
+      background: #FAF7F5
+      border: 5px solid #FAF7F5
+      box-sizing: border-box
+      border-radius: 20px
+      display: flex
+      align-items: center
+      justify-content: center
+    &__img
+      display: block
+      border-radius: 50%
+      width: 116px
+      height: 116px
+      position: absolute
+      top: -65px
+      left: 50%
+      margin-left: -58px
+      z-index: 1000
+      & img
+        border-radius: 50%
+        width: 116px
+        height: 116px
+        position: absolute
+        z-index: 1000
+      &::before
+        content: ""
+        width: 150px
+        height: 118px
+        background: url('../images/reviews-block-tree.png') no-repeat center
+        background-size: contain
+        transform: rotate(-95deg)
+        position: absolute
+        left: -92px
+        top: 40px
+        z-index: 1
+      &::after
+        content: ""
+        width: 150px
+        height: 118px
+        background: url('../images/reviews-block-tree.png') no-repeat center
+        background-size: contain
+        transform: rotate(80deg)
+        position: absolute
+        right: -90px
+        top: -23px
+        z-index: 1
+    &__content
+      width: 70%
+      height: auto
+      text-align: center
+      margin-top: 0px
+    &__text
+      font-family: "Gilroy-Lightr", sans-serif
+      font-size: 16px
+      line-height: 30px
+      color: #000000
+    &__author
+      font-family: "Gilroy-Regular", sans-serif
+      font-size: 25px
+      line-height: 60px
+      color: #4f4f4f
+      margin-bottom: 0px

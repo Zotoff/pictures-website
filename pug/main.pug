@@ -1,0 +1,288 @@
+main
+    section.whatdo
+        .container
+            .row
+                .col.text-center.whatdo__heading
+                    h2 Делаем картины, которые поразят любого
+            .row.d-flex.align-items-center.justify-content-between
+                .col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.whatdo__item.item--quality
+                    .whatdo__item__top
+                        img(loading="lazy", src="images/image-quality.png", alt="")
+                    .whatdo__item__bottom
+                        .whatdo__item__bottom__wrapper
+                            h3.whatdo__item__bottom__heading Высокое качество!
+                            p.whatdo__item__bottom__text Используем PREMIUM сатиновый холст - 100% передача красок и море эмоций. Холсты со временем не провисают. Немецкие краски не пахнут и не выцветают
+                .col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.whatdo__item.item--drawers
+                    .whatdo__item__top
+                        img(loading="lazy", src="images/image-portrait.png", alt="")
+                    .whatdo__item__bottom
+                        .whatdo__item__bottom__wrapper
+                            h3.whatdo__item__bottom__heading Более 90 художников и более 40 стилей живописи!
+                            p.whatdo__item__bottom__text Используем PREMIUM сатиновый холст - 100% передача красок и море эмоций. Холсты со временем не провисают. Немецкие краски не пахнут и не выцветают
+                .col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.whatdo__item.item--gift
+                    .whatdo__item__top
+                        img(loading="lazy", src="images/image-gift.png", alt="")
+                    .whatdo__item__bottom
+                        .whatdo__item__bottom__wrapper
+                            h3.whatdo__item__bottom__heading Яркий подарок для любого праздника
+                            p.whatdo__item__bottom__text Используем PREMIUM сатиновый холст - 100% передача красок и море эмоций. Холсты со временем не провисают. Немецкие краски не пахнут и не выцветают
+
+    section.examples
+        .container
+            .row
+                .col-md-8
+                    h2.examples__heading Примеры портретов на <br />холсте с&nbsp;ручной отрисовкой
+                .col-md-4.d-flex.justify-content-end
+                    .examples__slider__nav__wrapper
+                        .examples__slider__prev
+                        .examples__slider__next
+            .row
+                .col.examples__slider__container
+                    .swiper-wrapper
+                        .examples__slider__item.slide--big.swiper-slide
+                            img(loading="lazy", src="images/example-main.png", alt="")
+                        .examples__slider__item.slide--double.swiper-slide
+                            img(loading="lazy", src="images/example-man1.png", alt="")
+                            img(loading="lazy", src="images/example-woman3.png", alt="")
+                    .swiper-pagination
+    section.review
+        .container
+            .row
+                .col.review__heading
+                    h2.text-center Оцените наше<br />творчество
+            .row.review__main__block
+                .col-xl-5.col-lg-5.col-md-5.col-sm-12.col-xs-12.review__whatcan__left
+                    .review__whatcan__left__block
+                        h3.review__heading3 Что мы умеем:
+                        ol.review__list.review__text
+                            li Восстанавливаем старые и ч/б фото
+                            li Соединяем разные фотографии в одной композиции
+                            li Отрисовываем изображения плохого качества
+                            li Меняем фон либо делаем красивое размытие
+                            li Рисуем и вписываем в любые образы
+                    .review__whatcan__left__block
+                        h3.review__heading3 Дополнительные услуги:
+                        ol.review__list.review__text
+                            li Покрытие акриловым лаком
+                            li Покрытие 3D-лаком
+                            li Установка настенного подвеса
+                            li Обработка фото
+                    .review__whatcan__left__block
+                        .review__left__button
+                            a.orderButton(href="") Оставьте заявку
+                        p.review__left__smalltext.text--red и мы посчитаем стоимость услуги
+                .col-xl-7.col-lg-7.col-md-7.col-sm-12.col-xs-12.review__whatcan__right
+                    .whatcan__slider
+                        .swiper-wrapper
+                            .review__whatcan__slider__item.swiper-slide
+                                .review__whatcan__slider__item__wrapper
+                                a.review__whatcan__slider__item__link(href="images/review-slider-main.png", data-fancybox="gallery")
+                                    img(loading="lazy", src="images/review-slider-main.png", alt="")
+                            .review__whatcan__slider__item.swiper-slide
+                                .review__whatcan__slider__item__wrapper
+                                a.review__whatcan__slider__item__link(href="images/review-slider-main.png", data-fancybox="gallery")
+                                    img(loading="lazy", src="images/review-slider-main.png", alt="")
+                        .review__swiper__pagination
+                            .review__swiper__prev
+                            .review__swiper__next
+    section.prices
+        .container
+            .row.prices__heading
+                .col-md-6.prices__heading__left
+                    h2 Популярные <br />размеры и цены
+                .col-md-6.prices__heading__right
+                    p В стоимость входит: перенос фото на премиум сатиновый холст, галерейная натяжка на подрамник, крепеж и упаковка. Сделаем любой размер (вертикальный и горизонтальный)
+            .row.prices__slider
+                .col-xl-10.col-lg-10.col-md-12.col-sm-12.col-xs-12.prices__slider
+                    .swiper-wrapper
+                        .prices__slider__item.swiper-slide
+                            .prices__slider__item__wrapper
+                                .prices__slider__item__frame
+                                img(loading="lazy", src="images/sizes-slider-image.png", alt="")
+                            p.prices__slider__item__descr 20x30 
+                                span  1190 р.
+                        .prices__slider__item.swiper-slide
+                            .prices__slider__item__wrapper
+                                .prices__slider__item__frame
+                                img(loading="lazy", src="images/sizes-slider-image2.png", alt="")
+                            p.prices__slider__item__descr 30x45
+                                span  1390 р.
+                        .prices__slider__item.swiper-slide
+                            .prices__slider__item__wrapper
+                                .prices__slider__item__frame
+                                img(loading="lazy", src="images/sizes-slider-image3.png", alt="")
+                            p.prices__slider__item__descr 40x40
+                                span  1590 р.
+                .col-xl-2.col-lg-2.col-md-12.col-sm-12.col-xs-12
+                    .prices__slider__controls
+                        .prices__slider__nav__wrapper
+                            .prices__slider__prev
+                            .prices__slider__next
+    section.style
+        .container
+            .row.style__heading
+                .col-md-12.style__heading__left
+                    h2 Стиль картины<br />на холсте
+            .row.style__slider
+                .col-xl-10.col-lg-10.col-md-12.col-sm-12.col-xs-12.style__slider
+                    .swiper-wrapper
+                        .style__slider__item.swiper-slide
+                            .style__slider__item__wrapper
+                                .style__slider__item__frame
+                                img(loading="lazy", src="images/style-slider-image.png", alt="")
+                            p.style__slider__item__descr Портрет под фото 
+                        .style__slider__item.swiper-slide
+                            .style__slider__item__wrapper
+                                .style__slider__item__frame
+                                img(loading="lazy", src="images/style-slider-image2.png", alt="")
+                            p.style__slider__item__descr Портрет под живопись
+                        .style__slider__item.swiper-slide
+                            .style__slider__item__wrapper
+                                .style__slider__item__frame
+                                img(loading="lazy", src="images/style-slider-image3.png", alt="")
+                            p.style__slider__item__descr Авторский портрет
+                .col-xl-2.col-lg-2.col-md-12.col-sm-12.col-xs-12
+                    .style__slider__controls
+                        .style__slider__nav__wrapper
+                            .style__slider__prev
+                            .style__slider__next
+    section.pictures
+        .container
+            .row.pictures__heading
+                .col-md-12.pictures__heading__left
+                    h2 Виды картин
+            .row.pictures__slider
+                .col-xl-10.col-lg-10.col-md-12.col-sm-12.col-xs-12.pictures__slider
+                    .swiper-wrapper
+                        .pictures__slider__item.swiper-slide
+                            .pictures__slider__item__wrapper
+                                .pictures__slider__item__frame
+                                img(loading="lazy", src="images/pictures-slider-image.png", alt="")
+                            p.pictures__slider__item__descr Портрет по фото 
+                        .pictures__slider__item.swiper-slide
+                            .pictures__slider__item__wrapper
+                                .pictures__slider__item__frame
+                                img(loading="lazy", src="images/pictures-slider-image1.png", alt="")
+                            p.pictures__slider__item__descr Репродукции известных картин
+                        .pictures__slider__item.swiper-slide
+                            .pictures__slider__item__wrapper
+                                .pictures__slider__item__frame
+                                img(loading="lazy", src="images/pictures-slider-image2.png", alt="")
+                            p.pictures__slider__item__descr Модульные картины
+                .col-xl-2.col-lg-2.col-md-12.col-sm-12.col-xs-12
+                    .pictures__slider__controls
+                        .pictures__slider__nav__wrapper
+                            .pictures__slider__prev
+                            .pictures__slider__next
+    section.frames
+        .container
+            .row.frames__heading
+                .col-md-12.frames__heading__left
+                    h2 Виды рамок
+            .row.frames__slider
+                .col-xl-10.col-lg-10.col-md-12.col-sm-12.col-xs-12.frames__slider
+                    .swiper-wrapper
+                        .frames__slider__item.swiper-slide
+                            .frames__slider__item__wrapper
+                                .frames__slider__item__frame
+                                img(loading="lazy", src="images/frames-block-slider-image.png", alt="")
+                            p.frames__slider__item__descr Портрет по фото 
+                        .frames__slider__item.swiper-slide
+                            .frames__slider__item__wrapper
+                                .frames__slider__item__frame
+                                img(loading="lazy", src="images/frames-block-slider-image.png", alt="")
+                            p.frames__slider__item__descr Портрет под живопись
+                        .frames__slider__item.swiper-slide
+                            .frames__slider__item__wrapper
+                                .frames__slider__item__frame
+                                img(loading="lazy", src="images/frames-block-slider-image.png", alt="")
+                            p.frames__slider__item__descr Авторский портрет
+                .col-xl-2.col-lg-2.col-md-12.col-sm-12.col-xs-12
+                    .frames__slider__controls
+                        .frames__slider__nav__wrapper
+                            .frames__slider__prev
+                            .frames__slider__next
+    section.testimonials
+        .container
+            .row
+                .col.testimonials__slider
+                    .swiper-wrapper
+                        .testimonials__slider__item.swiper-slide
+                            .testimonials__slider__img
+                                img(loading="lazy", src="images/testimonials-author.png", alt="")
+                            .testimonials__slider__content
+                                p.testimonials__slider__author Антон Авторский
+                                p.testimonials__slider__text Мне всё понравилось
+                        .testimonials__slider__item.swiper-slide
+                            .testimonials__slider__img
+                                img(loading="lazy", src="images/testimonials-author.png", alt="")
+                            .testimonials__slider__content
+                                p.testimonials__slider__author Антон Авторский
+                                p.testimonials__slider__text Мне всё понравилось
+                        .testimonials__slider__item.swiper-slide
+                            .testimonials__slider__img
+                                img(loading="lazy", src="images/testimonials-author.png", alt="")
+                            .testimonials__slider__content
+                                p.testimonials__slider__author Антон Авторский
+                                p.testimonials__slider__text Мне всё понравилось
+            .row
+                .col.testimonials__slider__controls
+                    .testimonials__slider__controls__wrapper
+                        .testimonials__slider__prev
+                        .testimonials__slider__next
+    section.contacts
+        .container
+            .row
+                .col-xl-5.col-lg-5.col-md-5.col-sm-12.col-xs-12.contacts__left
+                    .contacts__left__heading
+                        h2 Связь с нами
+                    .contacts__left__text
+                        p Вы можете связаться с нами по реквизитам, указанным внизу.
+                .col-xl-7.col-lg-7.col-md-7.col-sm-12.col-xs-12.contacts__right
+                    .contacts__right__form__wrapper
+                        form(action="http://httpbin.org/post", method="POST", enctype="multipart/form-data")#bottomForm
+                            .form-group.form-group--single
+                                label(for="bottomPhone")
+                                    input(type="tel", id="bottomPhone", required="required", data-msg="Пожалуйста, заполните это поле", data-rule-digits="true", data-msg-digits="Допустим ввод только цифр", name="bottom-phone", placeholder="Номер телефона")
+                            .form-group.form-group--single
+                                label(for="bottomName")
+                                    input(type="text", id="bottomName", required="required", data-msg="Пожалуйста, заполните это поле", data-rule-minlength="2", data-msg-minlength="Минимум 2 символа", name="bottom-name", placeholder="Ваше имя")
+                            .form-group.form-group--double
+                                select#size(name="size")
+                                    option(value="") Размер
+                                    option(value="1150") 20x30
+                                    option(value="1350") 30x45
+                                    option(value="1590") 40x40
+                                select#view(name="view")
+                                    option(value="") Вид
+                                    option(value="500") Портрет под фото
+                                    option(value="1000") Репродукция
+                                    option(value="2000") Модульный
+                            .form-group.form-group--double
+                                select#style(name="style")
+                                    option(value="") Стиль
+                                    option(value="200") Под фото
+                                    option(value="250") Под живопись
+                                    option(value="300") Авторский
+                                select#frame(name="frame")
+                                    option(value="") Рамка
+                                    option(value="200") Под фото
+                                    option(value="350") Под живопись
+                                    option(value="500") Авторский
+                            .form-group.form-group--single
+                                select#services(name="services")
+                                    option(value="") Доп.услуги
+                                    option(value="250") Покрытие акриловым лаком
+                                    option(value="500") Покрытие 3D-лаком
+                                    option(value="100") Установка настенного подвеса
+                                    option(value="200") Обработка фото
+                            .form-group.form-group--double.form-group--policy
+                                input(type="file", name="image", id="image", class="inputfile", accept="image/png, image/jpeg")
+                                label(for="image", class="filelabel") Ваше изображение
+                                label(for="price")
+                                    span.contacts__right__form__price Примерная цена:&nbsp;
+                                        span#price 1000 
+                                        |  &#8381;
+                            .form-group.form-group--single
+                                button(type="submit") Свяжитесь с нами
+                            p#orderMessage
